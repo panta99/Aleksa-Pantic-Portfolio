@@ -1,0 +1,277 @@
+:root{
+    --apblack: #080C25;
+    --aplightblack:#161E35;
+    --apblue:#3071E7;
+    --apwhite:#ffffff;
+    --aplblue:#a6b2EC;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+body{
+    font-family: 'Nunito', sans-serif;
+    background-color: var(--aplblue);
+}
+a{
+    text-decoration: none;
+}
+
+.bojamenija{
+    color: var(--apwhite) !important;
+}
+.active,.nav-item:hover{
+
+    background-color:var(--apblue) !important;
+    border-radius: 5px !important;
+    transition: 500ms;
+}
+.navbar-brand:hover{
+    color:var(--apblue) !important;
+}
+header{
+    background: url("../img/header-cover.jpg") no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+
+}
+#welcome{
+    
+    margin-top: 50vh !important;
+    color:white;
+    background-color: rgba(0,0,0,0.8);
+}
+#welcomep{
+    font-size: 70px;
+}
+.transparentna{
+    background-color: transparent;
+}
+.bojanavigacije{
+    background-color:var(--aplightblack);
+    transition: 500ms ease-in-out;
+}
+#aboutme{
+    background: rgb(5,10,40);
+    background: linear-gradient(180deg, rgba(5,10,40,1) 40%, rgba(166,178,236,1) 100%);
+}
+.tekstKodSlike{
+    color:white;
+    font-size: 45px;
+}
+.active{
+    background-color: var(--apblue);
+}
+.img-border{
+    border-radius: 15px;
+    border: 2px solid white;
+    height: 60vh;
+}
+#skills{
+    background-color: var(--aplblue);
+}
+.tekstsekcija{
+    color:var(--apwhite);
+    border-radius: 10px;
+    background-color: rgba(0,0,0,0.7);
+    font-size: 40px;
+    font-weight: bold;
+}
+#skills1 li{
+    margin: 20px 0;
+}
+.linija{
+    background-color:var(--aplightblack);
+    display: block;
+    height: 15px;
+    border: 3px solid rgba(0,0,0,0.3);
+    border-radius: 3px;
+    overflow: hidden;
+    box-shadow: 0 0 5px #2187e7b3;
+}
+.linija span{
+    height: 15px;
+    float: left;
+    background: var(--apblue);
+}
+.html5{
+    width: 90%;
+    animation: html 2000ms;
+}
+.css3{
+    width: 70%;
+    animation: css3 2000ms;
+}
+.bootstrap{
+    width: 70%;
+    animation: bootstrap 2000ms;
+}
+.javascript{
+    width: 60%;
+    animation: javascript 2000ms;
+}
+.mssql{
+    width: 60%;
+    animation: mssql 2000ms;
+}
+@keyframes html{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 90%;
+    }
+}
+@keyframes css3{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 70%;
+    }
+}
+@keyframes bootstrap{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 70%;
+    }
+}
+@keyframes javascript{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 60%;
+    }
+}
+@keyframes mssql{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 60%;
+    }
+}
+
+.strelica-vrh{
+    background-color: var(--apblue);
+    position: fixed;
+    right: 5px;
+    bottom: 16px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+    color:var(--apwhite);
+    text-decoration: none;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 500ms;   
+}
+.strelica-vrh:hover{
+    color:var(--aplightblack)
+}
+.strelica-vrh.aktivna{
+    border-radius: 50%;
+    pointer-events: auto;
+    opacity: 0.6;
+}
+.card-body{
+    background-color: var(--aplightblack);
+    box-shadow: 0 0 20px 7px rgba(0,0,0,0.5);
+}
+.ne-prikazuj{
+    opacity: 0;
+    transition: all 700ms ease-in-out;
+}
+.pojavljivanje{
+    opacity: 1;
+}
+.card h5, .card p{
+    color: var(--apwhite);
+}
+.card a{
+    color:var(--apblue);
+    padding: 10px;
+}
+.card a:hover{
+    background-color: var(--apblue);
+    border-radius: 3px;
+    color: var(--apwhite);
+}
+#skills{
+    padding-top: 150px;
+    margin-bottom: 80px;
+}
+#projects{
+    margin-bottom: 120px;
+}
+#contact{
+    padding-top: 150px;
+}
+.greska{
+    color:#ff0000;
+    font-size: 20px;
+}
+#greskaNaImenu,#greskaNaPrezimenu,#greskaNaMejlu,#greskaNaIzboru,#greskaNaTekstPoruka{
+    visibility: hidden;
+}
+#forma{
+    width: 60%;
+    padding-top: 30px;
+    background-color: var(--aplightblack);
+    border: 3px solid var(--apwhite);
+    border-radius: 10px;
+}
+#ime,#prezime,#mejl{
+    width: 70%;
+    font-weight: bold;
+    border-radius: 5px;
+}
+#nijeGreska{
+    font-weight: bold;
+    margin-top: 10px;
+    font-size: 20px;
+    color:var(--apwhite);
+    visibility: hidden;
+}
+#txtArea,#biraj{
+    width: 70%;
+    font-weight: bold;
+    border-radius: 5px;
+}
+#posaljiPodatke{
+    width: 30%;
+    height: 35px;
+    background-color: var(--apblue);
+    color:var(--apwhite);
+    font-size: 20px;
+    font-weight: bold;
+    border: 2px solid var(--apwhite);
+    border-radius: 5px;
+}
+footer{
+    background: var(--aplightblack);
+    
+}
+.socialmedia{
+    font-size: 25px;
+    color:var(--apwhite);
+}
+.socialmedia:hover,#dokumentacija:hover{
+    color:var(--apblue);
+}
+#dokumentacija{
+    color: var(--apwhite);
+}
+#boja{
+    color: var(--apwhite);
+}

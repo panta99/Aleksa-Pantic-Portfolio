@@ -1,0 +1,82 @@
+:root{
+    --apblack: #080C25;
+    --aplightblack:#161E35;
+    --apblue:#3071E7;
+    --apwhite:#ffffff;
+    --aplblue:#a6b2EC;
+}
+@media screen and (max-width:1441px) {
+    .tekstKodSlike{
+        font-size: 30px;
+    }
+}
+@media screen and (max-width:1200px) {
+    .tekstKodSlike{
+        font-size: 30px;
+    }
+}
+@media screen  and (max-width:996px){
+    #welcome >h1{
+        font-size: 40px;
+    }
+    .menu{
+        background-color:var(--aplightblack);
+    }
+    .tekstKodSlike{
+        font-size: 30px;
+        margin-top: -50px !important;
+    }
+}
+
+@media screen and (max-width: 769px) {
+    #aboutme{
+        margin-top: -50px !important;
+    }
+    #welcome >h1{
+        font-size: 30px
+    }
+    .tekstKodSlike{
+        font-size: 25px;
+        margin-top: 50px !important;
+    }
+    .tekstsekcija{
+        font-size: 30px;
+    }
+    #projekti1{
+        margin-bottom: 20px;
+    }
+    #projekti2{
+        margin-bottom: 20px;
+    }
+    #projekti3{
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    #welcome >h1{
+        font-size: 25px
+    }
+    .tekstKodSlike{
+        font-size: 25px;
+        margin-top: -30px !important;
+    }
+    #skills{
+        margin-top: -100px;
+    }
+    #projects{
+        margin-top: -200px;
+    }
+    #contact{
+        margin-top: -200px;
+    }
+    #forma{
+        width: 96%;
+    }
+    .greska{
+        font-size: 15px;
+    }
+    #nijegreska{
+        font-size: 15px !important;
+    }
+}
