@@ -91,7 +91,7 @@ function skillsIspis(){
         ispis += ` <li>
                     <h3 class="fw-bold">${nizNaziv[i]}</h3><span class="linija"><span  id="${idNaziv[i]}"  class=""></span></span>
                     </li>`
-                    console.log(ispis);
+                   
     }
     skills.innerHTML = ispis;
 }
