@@ -151,7 +151,7 @@ window.addEventListener("scroll", ()=>{
         document.querySelector(".services2").classList.add("pojavljivanje");
     }
     function dodelaservices3(){
-        document.querySelector(".services3").classList.add("pojavljivanje");
+        document.querySelector(".services1").classList.add("pojavljivanje");
     }
     sekcije2.forEach( sekcija => {
         let vrhSekcije1 = sekcija.offsetTop;
@@ -167,7 +167,7 @@ window.addEventListener("scroll", ()=>{
         brojac2++;
     }
     else if((trenutna == "services") && (brojac3 == 0)){
-        document.querySelector(".services1").classList.add("pojavljivanje");
+        document.querySelector(".services3").classList.add("pojavljivanje");
         setTimeout(dodelaservices2,700);
         setTimeout(dodelaservices3,1400);
         brojac3++;
