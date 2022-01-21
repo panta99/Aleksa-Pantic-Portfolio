@@ -79,4 +79,14 @@
     #nijegreska{
         font-size: 15px !important;
     }
+    input[type=text],input[type=email],#biraj,#txtArea{
+        font-size: 15px;
+    }
+    .labela{
+        font-size: 15px;
+    }
+    #services{
+        margin-top: -100px;
+        margin-bottom: 100px;
+    }
 }
