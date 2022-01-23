@@ -242,8 +242,8 @@ function proveriOdabir(){
 function proveriPoruku(){
     var message = document.getElementById("txtArea").value;
     var tekstPorukaGr = document.getElementById("greskaNaTekstPoruka");
-    var regularniMessage = /^[A-z\.\,\s\w\d\t\nčćžđš\/\@]+$/
-    var greskaPoruka ="You can't leave field blank";
+    var regularniMessage = /^[A-z\.\,\s\w\d\t\nčćžđš\/\@\?]+$/
+    var greskaPoruka ="You can't leave the field blank";
     pokaziGresku(message, regularniMessage, tekstPorukaGr,greskaPoruka);
 }
 function proveriFormu(e){
