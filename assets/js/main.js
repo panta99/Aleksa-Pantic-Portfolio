@@ -78,6 +78,45 @@ function ispisporuke(){
 
 ispisporuke();
 
+//Dinamicko ispisivanje services sekcije
+
+let usluge=document.querySelector(".usluge");
+
+ services = [
+    {
+        "klasa":"services1",
+        "naziv":"Web design",
+        "ikonica":"fas fa-globe",
+        "opis":"I'm passionate about making beautiful and functional websites for every client. My specialty is on working with you to develop a website strategy so that your website not only looks great, but works great too."
+    },
+    {
+        "klasa":"services2",
+        "naziv":"SEO optimization",
+        "ikonica":"fas fa-search",
+        "opis":"Having a professional website created is the first step to online success, but just because you have a website doesn't mean anyone will find it. I can help your website get found in the search engines."
+    },
+    {
+        "klasa":"services3",
+        "naziv":"Responsive design",
+        "ikonica":"fas fa-tablet-alt",
+        "opis":"As the continuing trend in website development, designing websites for smartphones, tablets and mobile devices as a priority over desktop development, shows no sign of slowing, I can make your site designed for all resolution."
+    },
+ ];
+
+ispisServices(services);
+
+ function ispisServices(services){
+     let html="";
+     for(service of services){
+         html+=`<div class="col-md-3 usluga mt-5 ne-prikazuj ${service.klasa}">
+         <h3 class="mt-5 fw-bold">${service.naziv}</h3>
+         <p><i class="${service.ikonica} ikonica"></i></p>
+         <p class="mt-5  mb-5">${service.opis}</p>
+     </div>`
+     }
+     usluge.innerHTML=html;
+ }
+
 //Dinamicki ispis skill liste
 
 
@@ -243,7 +282,7 @@ function proveriPoruku(){
     var message = document.getElementById("txtArea").value;
     var tekstPorukaGr = document.getElementById("greskaNaTekstPoruka");
     var regularniMessage = /^[A-z\.\,\s\w\d\t\nčćžđš\/\@\?]+$/
-    var greskaPoruka ="Wrong format of message";
+    var greskaPoruka ="Message must contain only letters";
     pokaziGresku(message, regularniMessage, tekstPorukaGr,greskaPoruka);
 }
 function proveriFormu(e){
