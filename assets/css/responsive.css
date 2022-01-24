@@ -5,6 +5,11 @@
     --apwhite:#ffffff;
     --aplblue:#a6b2EC;
 }
+@media screen and (max-width:1552px) {
+    .tekstKodSlike{
+        font-size: 35px;
+    }
+}
 @media screen and (max-width:1441px) {
     .tekstKodSlike{
         font-size: 30px;
