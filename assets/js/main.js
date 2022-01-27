@@ -171,8 +171,47 @@ window.addEventListener("scroll", ()=>{
     }
    
 });
+//Dinamicki ispis projekata
 
+projects = [
+    {
+       "id":"projekti1",
+       "slika":"project1.jpg",
+       "nazivProjekta":"RESTAURANT SITE",
+       "tehnologije":"HTML,CSS,JAVASCRIPT,BOOTSTRAP"
+    },
+    {
+       "id":"projekti2",
+       "slika":"project2.jpg",
+       "nazivProjekta":"RENT A CAR SITE",
+       "tehnologije":"HTML,CSS,JAVASCRIPT,BOOTSTRAP"
+    },
+    {
+       "id":"projekti3",
+       "slika":"project3.jpg",
+       "nazivProjekta":"SHOPING SITE",
+       "tehnologije":"HTML,CSS,JAVASCRIPT,BOOTSTRAP"
+    }
+];
 
+var projekatIspis=document.querySelector("#projekt");
+projektiIspis(projects);
+function projektiIspis(projects){
+   let html="";
+    for(projekat of projects){
+        html+=`<div  id="${projekat.id}" class="col-md-4 ne-prikazuj">
+                <div class="card text-center">
+                    <img src="assets/img/${projekat.slika}" class="card-img-top" alt="projectphoto" />
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold">${projekat.nazivProjekta}</h5>
+                        <p>${projekat.tehnologije}</p>
+                        <a href="#">VISIT SITE</a>
+                    </div>
+                </div>
+            </div>`
+    }
+    projekatIspis.innerHTML=html;
+}
 //Pojava projekat i services elemenata na scroll
 let sekcije2 = document.querySelectorAll("section");
 let brojac2 = 0;
@@ -282,7 +321,7 @@ function proveriPoruku(){
     var message = document.getElementById("txtArea").value;
     var tekstPorukaGr = document.getElementById("greskaNaTekstPoruka");
     var regularniMessage = /^[A-z\.\,\s\w\d\t\nčćžđš\/\@\?]+$/
-    var greskaPoruka ="Message in wrong format";
+    var greskaPoruka ="Message must contain only letters";
     pokaziGresku(message, regularniMessage, tekstPorukaGr,greskaPoruka);
 }
 function proveriFormu(e){
