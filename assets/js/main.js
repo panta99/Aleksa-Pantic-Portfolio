@@ -282,7 +282,7 @@ function proveriPoruku(){
     var message = document.getElementById("txtArea").value;
     var tekstPorukaGr = document.getElementById("greskaNaTekstPoruka");
     var regularniMessage = /^[A-z\.\,\s\w\d\t\nčćžđš\/\@\?]+$/
-    var greskaPoruka ="Message must contain only letters";
+    var greskaPoruka ="Message in wrong format";
     pokaziGresku(message, regularniMessage, tekstPorukaGr,greskaPoruka);
 }
 function proveriFormu(e){
