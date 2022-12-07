@@ -184,14 +184,14 @@ projects = [
     {
        "id":"projekti2",
        "slika":"project2.jpg",
-       "nazivProjekta":"RENT A CAR SITE",
+       "nazivProjekta":"Renta a car site",
        "tehnologije":"HTML, CSS, JavaScript, Bootstrap",
        "link":"#"
     },
     {
        "id":"projekti3",
        "slika":"project3.jpg",
-       "nazivProjekta":"SHOPING SITE",
+       "nazivProjekta":"Shoping Site",
        "tehnologije":"HTML, CSS, JavaScript, Bootstrap",
        "link":"#"
     }
