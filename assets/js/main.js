@@ -99,7 +99,7 @@ let usluge=document.querySelector(".usluge");
         "klasa":"services3",
         "naziv":"Responsive design",
         "ikonica":"fas fa-tablet-alt",
-        "opis":"As the continuing trend in website development, designing websites for smartphones, tablets and mobile devices as a priority over desktop development, shows no sign of slowing, I can make your site designed for all resolution."
+        "opis":"As the continuing trend in website development, designing websites for smartphones, tablets and mobile devices as a priority over desktop development, shows no sign of slowing, I can make your site designed for all resolution. "
     },
  ];
 
