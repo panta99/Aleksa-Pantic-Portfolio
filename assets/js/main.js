@@ -178,19 +178,22 @@ projects = [
        "id":"projekti1",
        "slika":"project1.jpg",
        "nazivProjekta":"Gunsmith Store",
-       "tehnologije":"HTML, CSS, Bootstrap,JavaScript, JQuery"
+       "tehnologije":"HTML, CSS, Bootstrap,JavaScript, JQuery",
+       "link":"https://panta99.github.io/gunsmith/index.html"
     },
     {
        "id":"projekti2",
        "slika":"project2.jpg",
        "nazivProjekta":"RENT A CAR SITE",
-       "tehnologije":"HTML, CSS, JavaScript, Bootstrap"
+       "tehnologije":"HTML, CSS, JavaScript, Bootstrap",
+       "link":"#"
     },
     {
        "id":"projekti3",
        "slika":"project3.jpg",
        "nazivProjekta":"SHOPING SITE",
-       "tehnologije":"HTML,CSS,JavaScript,Bootstrap"
+       "tehnologije":"HTML,CSS,JavaScript,Bootstrap",
+       "link":"#"
     }
 ];
 
@@ -205,7 +208,7 @@ function projektiIspis(projects){
                     <div class="card-body">
                         <h5 class="card-title fw-bold">${projekat.nazivProjekta}</h5>
                         <p>${projekat.tehnologije}</p>
-                        <a href="#">VISIT SITE</a>
+                        <a href="${projekat.link}">VISIT SITE</a>
                     </div>
                 </div>
             </div>`
