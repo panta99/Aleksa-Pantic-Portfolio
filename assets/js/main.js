@@ -177,7 +177,7 @@ projects = [
     {
        "id":"projekti1",
        "slika":"project1.jpg",
-       "nazivProjekta":"Gunsmith Store
+       "nazivProjekta":"Gunsmith Store",
        "tehnologije":"HTML, CSS, Bootstrap,JavaScript, JQuery"
     },
     {
