@@ -178,7 +178,7 @@ projects = [
        "id":"projekti1",
        "slika":"project1.jpg",
        "nazivProjekta":"Gunsmith Store",
-       "tehnologije":"HTML, CSS, Bootstrap,JavaScript, JQuery",
+       "tehnologije":"HTML, CSS, Bootstrap, JavaScript, JQuery",
        "link":"https://panta99.github.io/gunsmith/index.html"
     },
     {
@@ -192,7 +192,7 @@ projects = [
        "id":"projekti3",
        "slika":"project3.jpg",
        "nazivProjekta":"SHOPING SITE",
-       "tehnologije":"HTML,CSS,JavaScript,Bootstrap",
+       "tehnologije":"HTML, CSS, JavaScript, Bootstrap",
        "link":"#"
     }
 ];
