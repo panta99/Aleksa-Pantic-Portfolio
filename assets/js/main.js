@@ -177,20 +177,20 @@ projects = [
     {
        "id":"projekti1",
        "slika":"project1.jpg",
-       "nazivProjekta":"RESTAURANT SITE",
-       "tehnologije":"HTML,CSS,JAVASCRIPT,BOOTSTRAP"
+       "nazivProjekta":"Gunsmith Store
+       "tehnologije":"HTML, CSS, Bootstrap,JavaScript, JQuery"
     },
     {
        "id":"projekti2",
        "slika":"project2.jpg",
        "nazivProjekta":"RENT A CAR SITE",
-       "tehnologije":"HTML,CSS,JAVASCRIPT,BOOTSTRAP"
+       "tehnologije":"HTML, CSS, JavaScript, Bootstrap"
     },
     {
        "id":"projekti3",
        "slika":"project3.jpg",
        "nazivProjekta":"SHOPING SITE",
-       "tehnologije":"HTML,CSS,JAVASCRIPT,BOOTSTRAP"
+       "tehnologije":"HTML,CSS,JavaScript,Bootstrap"
     }
 ];
 
